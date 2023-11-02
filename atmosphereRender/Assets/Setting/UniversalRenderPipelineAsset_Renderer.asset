@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
+  m_Name: UniversalRenderPipelineAsset_Renderer
+  m_EditorClassIdentifier: 
+  m_RendererFeatures:
+  - {fileID: 4964953092529508621}
+  m_RendererFeatureMap: 0dd1b23e880ee744
+  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
+  shaders:
+    blitPS: {fileID: 4800000, guid: c17132b1f77d20942aa75f8429c0f8bc, type: 3}
+    copyDepthPS: {fileID: 4800000, guid: d6dae50ee9e1bfa4db75f19f99355220, type: 3}
+    screenSpaceShadowPS: {fileID: 4800000, guid: 0f854b35a0cf61a429bd5dcfea30eddd,
+      type: 3}
+    samplingPS: {fileID: 4800000, guid: 04c410c9937594faa893a11dceb85f7e, type: 3}
+    fallbackErrorPS: {fileID: 4800000, guid: e6e9a19c3678ded42a3bc431ebef7dbd, type: 3}
+  m_OpaqueLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_TransparentLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_DefaultStencilState:
+    overrideStencilState: 0
+    stencilReference: 0
+    stencilCompareFunction: 8
+    passOperation: 0
+    failOperation: 0
+    zFailOperation: 0
+  m_ShadowTransparentReceive: 1
+--- !u!114 &4964953092529508621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986e6f5514c3694479f1095d15454a81, type: 3}
+  m_Name: NewAtmosphereRender
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  setting:
+    Event: 350
+    atmosphereRenderLutMat: {fileID: 2100000, guid: 0ad72980d8598d048b117ec2fb181d7f,
+      type: 2}
+    transmitLutMat: {fileID: 2100000, guid: 1c28828e44858344c865521c61425add, type: 2}
+    lightInstensity: 30
+    lightColor: {r: 1, g: 0.8843124, b: 0.7122642, a: 0}
+    rayMarchCount: 32
+    plantCenter: {x: 0, y: 0, z: 0}
+    plantRadius: 6360000
+    atmosphereHeight: 60000
+    mieScatteringScale: 0.19
+    mieAnisotropyScale: 0.898
+    mieScatteringHeight: 1200
+    rayLeighScatteringScale: 1
+    rayLeighScatteringHeight: 8000
+    ozoneAnisotropyScale: 1
+    ozoneHeight: 25000
+    ozoneWidth: 15000
+    ifMulAtmosphereRender: 1
+    mulTransmitLutMat: {fileID: 2100000, guid: eef944f2341f5064b8d82eedbceaa139, type: 2}
+    mulAtmosphereRenderStrength: 10
+    ifRenderAerialPerspective: 1
+    aerialPerspectiveLutMat: {fileID: 2100000, guid: 8c969effd90ad1e46aa149ec51f1b569,
+      type: 2}
+    aerialPerspectiveMat: {fileID: 2100000, guid: a8bf2efdfef01a44399b65bd1a615940,
+      type: 2}
+    aerialPerspectiveDistance: 320000
+    aerialInstensity: 1
+    aerialDistanceAttenuation: 0.2
